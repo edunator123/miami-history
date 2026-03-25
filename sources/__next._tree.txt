@@ -1,2 +1,2 @@
-:HL["/_next/static/chunks/0wqqpw2s.3rzl.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"sources","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"eeJrOuxIiw5wBllnYYDEh"}
+:HL["/miami-history/_next/static/chunks/0wqqpw2s.3rzl.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"sources","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"vaClVSNsA0SOLnjxMAnOE"}
