@@ -2,5 +2,5 @@
 2:I[82588,["/miami-history/_next/static/chunks/17tey7u4w5_j7.js","/miami-history/_next/static/chunks/0n4z.7yu76je-.js","/miami-history/_next/static/chunks/02page23lz1ur.js"],"default"]
 3:I[97367,["/miami-history/_next/static/chunks/17tey7u4w5_j7.js","/miami-history/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/miami-history/_next/static/chunks/02page23lz1ur.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"vaClVSNsA0SOLnjxMAnOE"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/miami-history/_next/static/chunks/02page23lz1ur.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qyj0tEUCclahsUuBq-IT3"}
 5:null
