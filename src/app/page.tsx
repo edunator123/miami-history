@@ -1,65 +1,77 @@
-import Image from "next/image";
+import Link from "next/link";
+import Hero from "@/components/Hero";
+import { PageWrapper, SectionHeading, Prose, P, Blockquote, SubHeading, SectionLabel, CrossLink } from "@/components/prose";
+import Reveal from "@/components/Reveal";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Hero />
+
+      {/* Thesis section */}
+      <Reveal>
+      <section style={{ backgroundColor: "var(--warm-white)", borderTop: "1px solid var(--divider)", padding: "80px 24px" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "200px 1fr", gap: 48 }}>
+          <div>
+            <SectionLabel>Central Argument</SectionLabel>
+            <div style={{ width: 40, height: 2, backgroundColor: "var(--copper)", marginTop: 8 }} />
+          </div>
+          <div style={{ borderLeft: "3px solid var(--copper)", paddingLeft: 32 }}>
+            <p className="font-display" style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.6rem)", fontStyle: "italic", lineHeight: 1.65, color: "var(--ink)" }}>
+              Miami’s early growth was not simply a story of boosterism and real estate fantasy. It was <strong style={{ fontStyle: "normal", color: "var(--deep-blue)" }}>built on the backs of immigrant labor</strong>, <strong style={{ fontStyle: "normal", color: "var(--deep-blue)" }}>organized through racialized urban planning</strong>, and shaped by unequal access to land, housing, and mobility.
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+      </Reveal>
+
+      {/* About */}
+      <PageWrapper>
+        <Reveal delay={0.1}>
+        <SectionLabel>About This Project</SectionLabel>
+        <SectionHeading>About</SectionHeading>
+        </Reveal>
+
+        <Reveal delay={0.2}>
+        <Prose>
+          <P>
+            This website presents a condensed digital version of an independent research study examining the development of Miami between approximately 1900 and 1940, with a particular focus on immigration, labor systems, and urban growth. The project situates Miami’s early expansion within broader historical processes, including real estate speculation, tourism-driven development, and the structuring of racial and spatial inequality.
+          </P>
+          <P>
+            Drawing on a combination of qualitative and quantitative sources, this study integrates historical scholarship with census data from the National Historical Geographic Information System (NHGIS) to reconstruct patterns of demographic change and social organization. Key variables examined include population growth, racial composition, nativity, housing tenure, and occupational distribution.
+          </P>
+          <P>
+            A central argument of this project is that Miami’s identity as an immigrant city predates the mid-twentieth century narratives commonly associated with post-1959 migration. Instead, the evidence demonstrates that immigration—particularly from the Bahamas and other regions—was integral to the city’s formation from its earliest stages.
+          </P>
+          <P>
+            By placing demographic data in dialogue with historical narrative, this study seeks to challenge simplified interpretations of Miami as a spontaneously developed or purely leisure-oriented city. Rather, it highlights the deliberate economic, social, and political processes that underpinned its development.
+          </P>
+        </Prose>
+        </Reveal>
+
+        {/* Key findings as stat cards */}
+        <Reveal delay={0.3}>
+        <div style={{ backgroundColor: "var(--parchment)", padding: "40px 32px", marginTop: 48, borderRadius: 4 }}>
+          <SectionLabel>Key Findings</SectionLabel>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 24, marginTop: 20 }}>
+            {[
+              { value: "258%", unit: "growth", desc: "Dade County population, 1910–1920" },
+              { value: "14.6%", unit: "immigrant ties", desc: "Share of population by 1910" },
+              { value: "35.1%", unit: "Black population", desc: "Largely Bahamian immigrants, 1910" },
+              { value: "55.3%", unit: "homes rented", desc: "A speculative boomtown by 1920" },
+            ].map((s) => (
+              <div key={s.value} style={{ textAlign: "center", padding: "16px 8px" }}>
+                <p className="font-display" style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 700, color: "var(--deep-blue)", marginBottom: 4 }}>{s.value}</p>
+                <p className="font-ui" style={{ fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase", color: "var(--copper)", fontWeight: 600, marginBottom: 8 }}>{s.unit}</p>
+                <p className="font-body" style={{ fontSize: 13, color: "var(--faded)", lineHeight: 1.5 }}>{s.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+        </Reveal>
+
+        <CrossLink href="/research">Begin with the Research</CrossLink>
+      </PageWrapper>
+    </>
   );
 }
