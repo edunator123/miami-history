@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "name": "miami_dredging_and_causeways_1905_1930",
+  "metadata": {
+    "description": "Artificial islands and causeways created by dredging in Biscayne Bay, 1905-1930",
+    "source": "Built by Labor, Divided by Design research project",
+    "coordinate_system": "WGS84 (EPSG:4326)",
+    "coordinate_order": "[longitude, latitude]",
+    "note": "Point coordinates for islands represent centroids. Actual polygon shapes require digitizing from historical aerial photos (FIU USCGS 1927 collection recommended)."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.146, 25.761] },
+      "properties": {
+        "id": "fisher_island",
+        "name": "Fisher Island",
+        "type": "artificial_island",
+        "created": "1905",
+        "method": "Byproduct of Government Cut dredging",
+        "original_owner": "Carl Fisher acquired 1919",
+        "notes": "Now one of wealthiest ZIP codes in USA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.156, 25.781] },
+      "properties": {
+        "id": "hibiscus_island",
+        "name": "Hibiscus Island",
+        "type": "artificial_island",
+        "created": "1918-1922",
+        "method": "Army Corps dredging",
+        "notes": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.156, 25.777] },
+      "properties": {
+        "id": "palm_island",
+        "name": "Palm Island",
+        "type": "artificial_island",
+        "created": "1919-1922",
+        "method": "Army Corps dredging",
+        "notes": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.150, 25.777] },
+      "properties": {
+        "id": "star_island",
+        "name": "Star Island",
+        "type": "artificial_island",
+        "created": "1922",
+        "method": "Army Corps dredging",
+        "notes": "High-end residential enclave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.165, 25.791] },
+      "properties": {
+        "id": "venetian_islands",
+        "name": "Venetian Islands (chain)",
+        "type": "artificial_island_chain",
+        "created": "1921-1925",
+        "method": "Private dredging",
+        "notes": "Chain of six islands connected by the Venetian Causeway (1926). Individual islands: Biscayne, San Marco, San Marino, Di Lido, Rivo Alto, Belle Isle."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.173, 25.784] },
+      "properties": {
+        "id": "watson_island",
+        "name": "Watson Island",
+        "type": "artificial_island",
+        "created": "1926",
+        "method": "Land reclamation",
+        "notes": "Now hosts Miami Children's Museum, Jungle Island"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-80.186, 25.790],
+          [-80.160, 25.793],
+          [-80.135, 25.791]
+        ]
+      },
+      "properties": {
+        "id": "collins_bridge",
+        "name": "Collins Bridge (demolished)",
+        "type": "causeway",
+        "opened": "1913-06-12",
+        "closed": "1925",
+        "length_miles": 2.5,
+        "material": "Wood",
+        "notes": "Longest wooden bridge in the world when built. Opened Miami Beach to development. Replaced by Venetian Causeway in 1926.",
+        "coordinate_precision": "approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-80.188, 25.782],
+          [-80.173, 25.783],
+          [-80.155, 25.782],
+          [-80.138, 25.782]
+        ]
+      },
+      "properties": {
+        "id": "county_causeway",
+        "name": "County Causeway (later MacArthur Causeway)",
+        "type": "causeway",
+        "opened": "1920",
+        "renamed": "1942 (to MacArthur Causeway)",
+        "notes": "Second bridge to Miami Beach. Passes through Watson, Palm, Hibiscus Islands.",
+        "coordinate_precision": "approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-80.189, 25.789],
+          [-80.175, 25.790],
+          [-80.167, 25.791],
+          [-80.160, 25.792],
+          [-80.145, 25.789]
+        ]
+      },
+      "properties": {
+        "id": "venetian_causeway",
+        "name": "Venetian Causeway",
+        "type": "causeway",
+        "opened": "1926",
+        "nrhp_number": "89000852",
+        "notes": "Replaced Collins Bridge. Connects via chain of Venetian Islands. NRHP listed.",
+        "coordinate_precision": "approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-80.1895, 25.7689],
+          [-80.180, 25.770],
+          [-80.165, 25.770],
+          [-80.150, 25.767],
+          [-80.135, 25.765],
+          [-80.131, 25.763]
+        ]
+      },
+      "properties": {
+        "id": "government_cut",
+        "name": "Government Cut",
+        "type": "shipping_channel",
+        "opened": "1905",
+        "notes": "Dredged channel creating modern Port of Miami entrance. Created Fisher Island by cutting south tip of Miami Beach.",
+        "coordinate_precision": "approximate alignment"
+      }
+    }
+  ]
+}

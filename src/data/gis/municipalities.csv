@@ -1,0 +1,14 @@
+id,name,incorporation_date,incorporation_year,center_lat,center_lon,notes,artificial_island
+miami,Miami,1896-07-28,1896,25.774,-80.192,"502 voters at incorporation; ~100 Black voters registered",false
+homestead,Homestead,1913-01-01,1913,25.469,-80.478,"2nd city in Dade County; agricultural hub",false
+florida_city,Florida City,1914-12-29,1914,25.448,-80.479,"Originally named Detroit",false
+miami_beach,Miami Beach,1915-03-26,1915,25.791,-80.135,"33 voters at incorporation; re-chartered as city May 1, 1917. Developed by Carl Fisher and John Collins.",true
+coral_gables,Coral Gables,1925-04-01,1925,25.750,-80.260,"George Merrick's ~10,000-acre Mediterranean Revival community; racially restricted",false
+hialeah,Hialeah,1925-09-01,1925,25.858,-80.278,"Curtiss & Bright development; racetrack built 1922",false
+north_miami,North Miami,1926-02-01,1926,25.890,-80.187,"Different from earlier 'North Miami' annexed into Miami 1913",false
+opa_locka,Opa-locka,1926-05-14,1926,25.902,-80.250,"Glenn Curtiss's Moorish Revival themed community",false
+miami_springs,Miami Springs,1926-08-23,1926,25.822,-80.289,"Curtiss development adjacent to Hialeah",false
+south_miami,South Miami,1927-06-01,1927,25.706,-80.293,"Originally the FEC Railway stop 'Larkin'",false
+golden_beach,Golden Beach,1929-05-21,1929,25.963,-80.122,"Oceanfront community on barrier island",false
+north_miami_beach,North Miami Beach,1931-06-15,1931,25.933,-80.162,"Originally 'Fulford-by-the-Sea'",false
+miami_shores,Miami Shores,1932-01-02,1932,25.863,-80.177,"Planned residential community",false

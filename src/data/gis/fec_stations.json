@@ -1,0 +1,182 @@
+{
+  "type": "FeatureCollection",
+  "name": "fec_railway_stations_dade_county",
+  "metadata": {
+    "description": "Florida East Coast Railway stations in Dade County, south to north",
+    "source": "Built by Labor, Divided by Design research project",
+    "coordinate_system": "WGS84 (EPSG:4326)",
+    "coordinate_order": "[longitude, latitude]",
+    "total_stations": 14,
+    "note": "The FEC Main Line was built by Henry Flagler in 1896 and extended to Miami that same year. Key Bahamian and African American labor force. The tracks followed roughly the modern NW/NE 1st Avenue alignment through Miami and served as a de facto racial boundary."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.151, 25.960] },
+      "properties": {
+        "id": "fec_ojus",
+        "station_name": "Ojus",
+        "modern_location": "Aventura",
+        "established": "c. 1896-1905",
+        "order_south_to_north": 14,
+        "notes": "Northernmost Dade County station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.162, 25.933] },
+      "properties": {
+        "id": "fec_fulford",
+        "station_name": "Fulford",
+        "modern_location": "North Miami Beach",
+        "established": "c. 1896-1905",
+        "order_south_to_north": 13,
+        "notes": "Community originally 'Fulford-by-the-Sea'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.170, 25.893] },
+      "properties": {
+        "id": "fec_arch_creek",
+        "station_name": "Arch Creek",
+        "modern_location": "North Miami",
+        "established": "c. 1896-1905",
+        "order_south_to_north": 12,
+        "notes": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.177, 25.863] },
+      "properties": {
+        "id": "fec_biscayne",
+        "station_name": "Biscayne",
+        "modern_location": "Miami Shores",
+        "established": "c. 1896-1905",
+        "order_south_to_north": 11,
+        "notes": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.187, 25.835] },
+      "properties": {
+        "id": "fec_little_river",
+        "station_name": "Little River",
+        "modern_location": "Little River / Little Haiti border",
+        "established": "c. 1896",
+        "order_south_to_north": 10,
+        "notes": "Pineapple shipping hub in 1890s-1910s"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.191, 25.817] },
+      "properties": {
+        "id": "fec_lemon_city",
+        "station_name": "Lemon City",
+        "modern_location": "Little Haiti",
+        "established": "1896",
+        "order_south_to_north": 9,
+        "notes": "Original 1896 station; Lemon City was a mixed-race farming community"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.192, 25.806] },
+      "properties": {
+        "id": "fec_buena_vista",
+        "station_name": "Buena Vista",
+        "modern_location": "Wynwood / Midtown",
+        "established": "c. 1900s",
+        "order_south_to_north": 8,
+        "notes": "Annexed into Miami 1913"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.194, 25.776] },
+      "properties": {
+        "id": "fec_miami_downtown",
+        "station_name": "Miami (Downtown Terminus)",
+        "modern_location": "Downtown Miami (200 NW 1st Ave)",
+        "established": "1896 (wooden station 1912)",
+        "order_south_to_north": 7,
+        "notes": "Main terminus; demolished 1964. Arrival point for most migrants. Near Flagler's Royal Palm Hotel."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.242, 25.729] },
+      "properties": {
+        "id": "fec_coconut_grove",
+        "station_name": "Coconut Grove",
+        "modern_location": "Coconut Grove",
+        "established": "c. 1896-1900",
+        "order_south_to_north": 6,
+        "notes": "Served the Bahamian community in West Grove"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.293, 25.706] },
+      "properties": {
+        "id": "fec_larkin",
+        "station_name": "Larkin",
+        "modern_location": "South Miami",
+        "established": "c. 1903",
+        "order_south_to_north": 5,
+        "notes": "Originally 'Larkin'; incorporated as South Miami 1927"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.312, 25.679] },
+      "properties": {
+        "id": "fec_kendall",
+        "station_name": "Kendall",
+        "modern_location": "Kendall",
+        "established": "c. 1903-1905",
+        "order_south_to_north": 4,
+        "notes": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.349, 25.607] },
+      "properties": {
+        "id": "fec_perrine",
+        "station_name": "Perrine",
+        "modern_location": "Perrine / Palmetto Bay",
+        "established": "c. 1903-1905",
+        "order_south_to_north": 3,
+        "notes": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.478, 25.469] },
+      "properties": {
+        "id": "fec_homestead",
+        "station_name": "Homestead",
+        "modern_location": "Homestead",
+        "established": "January 1904",
+        "order_south_to_north": 2,
+        "notes": "Major agricultural shipping point; tomatoes, citrus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.479, 25.448] },
+      "properties": {
+        "id": "fec_florida_city",
+        "station_name": "Florida City",
+        "modern_location": "Florida City",
+        "established": "c. 1904-1905",
+        "order_south_to_north": 1,
+        "notes": "Originally named 'Detroit'; southernmost mainland Dade station. Gateway to Overseas Railroad extension to Key West (1912)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "metadata": {
+    "title": "Miami & Dade County Historical GIS Data Source Index",
+    "description": "Priority-ranked index of data sources for building a historical GIS of Miami and Dade County, 1910-1930",
+    "project": "Built by Labor, Divided by Design",
+    "last_updated": "2026-04-16",
+    "priority_legend": {
+      "1": "🔴 Critical - download first",
+      "2": "🔴 Critical - foundational layer",
+      "3": "🟡 Important - core layer",
+      "4": "🟡 Important - supplemental",
+      "5": "🟢 Useful - reference/enhancement"
+    }
+  },
+  "sources": [
+    {
+      "priority": 1,
+      "rank": 1,
+      "id": "nhgis",
+      "name": "NHGIS County Boundaries and Aggregate Data",
+      "url": "https://www.nhgis.org/",
+      "api_url": "https://developer.ipums.org/",
+      "format": ["shapefile", "csv"],
+      "gis_ready": true,
+      "coverage": "US nationwide by year",
+      "period": "1790-present",
+      "features_needed": ["Dade County polygons 1900, 1910, 1920, 1930"],
+      "fips": { "state": "12", "county": "086" },
+      "license": "Free academic use (account required)",
+      "notes": "Boundary shapefiles automatically reflect Palm Beach split (1909) and Broward split (1915). Includes population tables by race, nativity, sex, age, occupation.",
+      "download_steps": [
+        "Create free account at nhgis.org",
+        "Go to Data Finder",
+        "Select years 1900, 1910, 1920, 1930",
+        "Geographic Level: County",
+        "Select Florida",
+        "Download boundary shapefiles + population tables"
+      ]
+    },
+    {
+      "priority": 1,
+      "rank": 2,
+      "id": "mapping_inequality_holc",
+      "name": "Mapping Inequality (HOLC Redlining)",
+      "url": "https://dsl.richmond.edu/panorama/redlining/",
+      "download_url": "https://dsl.richmond.edu/panorama/redlining/data",
+      "github_url": "https://github.com/americanpanorama/mapping-inequality-census-crosswalk",
+      "arcgis_feature_service": "https://services.arcgis.com/jIL9msH9OI208GCb/arcgis/rest/services/HOLC_Neighborhood_Redlining/FeatureServer",
+      "area_descriptions_url": "https://github.com/americanpanorama/HOLC_Area_Description_Data",
+      "format": ["shapefile", "geojson", "geotiff"],
+      "gis_ready": true,
+      "coverage": "Miami + ~200 other US cities",
+      "period": "c. 1937",
+      "features_needed": ["Miami HOLC A/B/C/D neighborhood polygons"],
+      "license": "CC-BY-NC",
+      "notes": "Includes both vector polygons AND georeferenced scan of original HOLC map as GeoTIFF. Area descriptions contain qualitative racial assessments by HOLC surveyors."
+    },
+    {
+      "priority": 2,
+      "rank": 3,
+      "id": "usgs_topoview",
+      "name": "USGS topoView (Historical Topographic Maps)",
+      "url": "https://ngmdb.usgs.gov/topoview/viewer/#14/25.7750/-80.2000",
+      "main_url": "https://ngmdb.usgs.gov/topoview/",
+      "format": ["geotiff", "geopdf", "jpeg"],
+      "gis_ready": true,
+      "coverage": "Miami quadrangle",
+      "period": "~1915, 1918, 1921, 1925, 1930+",
+      "features_needed": ["Miami 1:62,500 quad c. 1915 (earliest)"],
+      "license": "Public domain",
+      "notes": "Pre-georeferenced GeoTIFFs. Click Miami area in viewer, filter to 1:62,500 scale for pre-1930 maps.",
+      "download_steps": [
+        "Navigate viewer to 25.775, -80.20",
+        "Click tile to see available editions",
+        "Filter by scale 1:62,500 (63K button)",
+        "Select earliest available edition (~1915)",
+        "Download as GeoTIFF"
+      ]
+    },
+    {
+      "priority": 2,
+      "rank": 4,
+      "id": "loc_sanborn_miami",
+      "name": "Library of Congress Sanborn Maps - Miami",
+      "url": "https://www.loc.gov/collections/sanborn-maps/?fa=location:florida%7Clocation:miami&all=true&sb=date",
+      "format": ["jpeg", "tiff", "jp2", "iiif"],
+      "gis_ready": false,
+      "georeferencing_required": true,
+      "coverage": "City of Miami + Miami Beach + Coconut Grove",
+      "period": "1899, 1903, 1906, 1910, 1914, 1918, 1921, 1924, 1927",
+      "license": "Public domain (pre-1923 definitely; LOC has digitized all)",
+      "editions": [
+        { "year": 1899, "sheets": 5, "url": "https://www.loc.gov/item/sanborn01309_001/" },
+        { "year": 1903, "sheets": 10, "url": "https://www.loc.gov/item/sanborn01309_002/" },
+        { "year": 1906, "sheets": 14, "url": "https://www.loc.gov/item/sanborn01309_003/" },
+        { "year": 1910, "sheets": 20, "url": "https://www.loc.gov/item/sanborn01309_004/" },
+        { "year": 1914, "sheets": 40, "url": "https://www.loc.gov/item/sanborn01309_005/" },
+        { "year": 1918, "sheets": 44, "url": "https://www.loc.gov/item/sanborn01309_006/", "notes": "Includes Miami Beach, Coconut Grove" },
+        { "year": 1921, "sheets": 123, "url": "https://www.loc.gov/item/sanborn01309_007/", "notes": "MOST COMPREHENSIVE - Volume 1 with skeleton maps" },
+        { "year": 1924, "sheets": 36, "url": "https://www.loc.gov/item/sanborn01309_008/", "notes": "Vols 2-3: Miami Beach, Coral Gables, Silver Bluff" },
+        { "year": 1927, "sheets": 49, "url": "https://www.loc.gov/item/sanborn01309_009/" }
+      ],
+      "notes": "Must georeference in QGIS using Miami-Dade parcel data as control. Budget 2-4 hours per sheet. ProQuest Sanborn Maps Geo Edition has pre-georeferenced GeoTIFFs but requires institutional subscription."
+    },
+    {
+      "priority": 3,
+      "rank": 5,
+      "id": "miami_dade_gis",
+      "name": "Miami-Dade County GIS Open Data Portal",
+      "url": "https://gis-mdc.opendata.arcgis.com/",
+      "format": ["shapefile", "geojson", "arcgis_rest"],
+      "gis_ready": true,
+      "coverage": "Miami-Dade County (current)",
+      "period": "Current",
+      "license": "Public / Open",
+      "notes": "Current parcel layer useful for georeferencing historical Sanborn maps. Historic sites and districts layers available.",
+      "useful_layers": [
+        "Parcels (for Sanborn georeferencing control points)",
+        "Historic Sites",
+        "Historic Districts",
+        "Boundaries"
+      ]
+    },
+    {
+      "priority": 3,
+      "rank": 6,
+      "id": "city_miami_gis",
+      "name": "City of Miami GIS Open Data",
+      "url": "https://datahub-miamigis.opendata.arcgis.com/",
+      "historic_districts_url": "https://datahub-miamigis.opendata.arcgis.com/datasets/MiamiGIS::historic-districts/",
+      "city_boundary_url": "https://datahub-miamigis.opendata.arcgis.com/datasets/city-boundary",
+      "format": ["shapefile", "geojson"],
+      "gis_ready": true,
+      "coverage": "City of Miami",
+      "period": "Current",
+      "license": "Open",
+      "notes": "Historic Districts layer includes designated historic structures from the study era."
+    },
+    {
+      "priority": 3,
+      "rank": 7,
+      "id": "noaa_hurricanes",
+      "name": "NOAA Historical Hurricane Tracks",
+      "url": "https://coast.noaa.gov/digitalcoast/tools/hurricanes.html",
+      "hurdat2_url": "https://www.nhc.noaa.gov/data/",
+      "gis_products_url": "https://www.nhc.noaa.gov/gis/",
+      "format": ["shapefile", "kml", "csv"],
+      "gis_ready": true,
+      "coverage": "Atlantic Basin",
+      "period": "1851-present",
+      "features_needed": ["1926 Great Miami Hurricane track", "1928 Okeechobee Hurricane track"],
+      "license": "Public domain",
+      "notes": "HURDAT2 is the raw CSV. The interactive viewer lets you export custom shapefiles."
+    },
+    {
+      "priority": 3,
+      "rank": 8,
+      "id": "ipums_usa",
+      "name": "IPUMS USA Full-Count Census Microdata",
+      "url": "https://usa.ipums.org/usa/",
+      "format": ["csv", "fixed-width"],
+      "gis_ready": false,
+      "join_to_gis": "Via ENUMDIST variable",
+      "coverage": "US nationwide",
+      "period": "1790-present (full-count for 1850, 1880, 1900, 1910, 1920, 1930, 1940)",
+      "features_needed": ["Individual-level records for Dade County 1910, 1920, 1930"],
+      "license": "Free academic use (account required)",
+      "key_variables": [
+        "RACE",
+        "BPL (birthplace) - identifies Bahamians as BPL 26010",
+        "FBPL, MBPL (parents' birthplace)",
+        "OCC1950 (occupation)",
+        "OWNERSHP (home ownership)",
+        "LIT (literacy)",
+        "ENUMDIST (enumeration district - links to ED maps)"
+      ]
+    },
+    {
+      "priority": 4,
+      "rank": 9,
+      "id": "fiu_aerials",
+      "name": "FIU Historical Aerial Photographs (USCGS 1927)",
+      "url": "http://maps.fiu.edu/sfchap",
+      "format": ["raster"],
+      "gis_ready": "partial",
+      "coverage": "South Florida coastline",
+      "period": "1927, 1928, 1932, 1935",
+      "license": "Educational use",
+      "notes": "Invaluable for mapping extent of 1920s development and artificial islands. 1927 coverage is best."
+    },
+    {
+      "priority": 4,
+      "rank": 10,
+      "id": "fgdl",
+      "name": "Florida Geographic Data Library",
+      "url": "https://fgdl.org/",
+      "format": ["shapefile"],
+      "gis_ready": true,
+      "coverage": "Florida statewide",
+      "period": "Current",
+      "license": "Open",
+      "notes": "Good source for modern basemap layers: parcels, hydrography, transportation."
+    },
+    {
+      "priority": 4,
+      "rank": 11,
+      "id": "old_maps_online",
+      "name": "Old Maps Online - Miami",
+      "url": "https://www.oldmapsonline.org/en/Miami",
+      "format": "varies (aggregator)",
+      "gis_ready": "varies",
+      "coverage": "Miami (aggregated from multiple sources)",
+      "period": "1700s-1900s",
+      "notes": "Aggregator linking to LOC, Rumsey, and other sources. Set date slider to 1900-1930."
+    },
+    {
+      "priority": 4,
+      "rank": 12,
+      "id": "david_rumsey",
+      "name": "David Rumsey Map Collection",
+      "url": "https://www.davidrumsey.com/",
+      "search_url": "https://www.davidrumsey.com/luna/servlet/view/search?q=miami",
+      "format": ["jp2", "geotiff (via tool)"],
+      "gis_ready": "some",
+      "coverage": "Worldwide",
+      "period": "16th century-present",
+      "license": "CC-BY-NC for most items",
+      "notes": "Built-in Georeferencer tool for unreferenced maps. Search 'Miami' or 'Dade County' with date filter."
+    },
+    {
+      "priority": 5,
+      "rank": 13,
+      "id": "openhistoricalmap",
+      "name": "OpenHistoricalMap",
+      "url": "https://www.openhistoricalmap.org/#map=12/25.7743/-80.1937&layers=O&date=1920",
+      "api_url": "https://www.openhistoricalmap.org/api/0.6/",
+      "format": ["osm", "geojson"],
+      "gis_ready": true,
+      "coverage": "Worldwide (crowd-sourced)",
+      "period": "Variable",
+      "license": "ODbL",
+      "notes": "Crowd-sourced historical OSM. Coverage for 1920s Miami likely sparse but viewable with date slider. Could be contributed to as part of this project."
+    },
+    {
+      "priority": 5,
+      "rank": 14,
+      "id": "loc_1925_miami_map",
+      "name": "LOC 1925 Map of Miami (Sauer & Seghy)",
+      "url": "https://www.loc.gov/item/2010592715/",
+      "format": ["image"],
+      "gis_ready": false,
+      "period": "1925",
+      "license": "Public domain",
+      "notes": "'Map of the city of Miami and environs' by Sauer & Seghy. Useful for boom-era city extent. Requires georeferencing."
+    },
+    {
+      "priority": 5,
+      "rank": 15,
+      "id": "florida_memory",
+      "name": "Florida Memory (State Archives of Florida)",
+      "url": "https://www.floridamemory.com/discover/maps/",
+      "format": ["image scans"],
+      "gis_ready": false,
+      "coverage": "Florida",
+      "period": "1500s-present",
+      "license": "Public domain (state records)",
+      "notes": "300+ digitized FL maps including township, highway, railroad. WPA Church Records list 200+ Dade County churches. Requires georeferencing."
+    },
+    {
+      "priority": 5,
+      "rank": 16,
+      "id": "familysearch_ed_maps",
+      "name": "FamilySearch Enumeration District Maps",
+      "url": "https://www.familysearch.org/",
+      "morse_ed_finder": "https://stevemorse.org/census/unified.html",
+      "format": ["image scans"],
+      "gis_ready": false,
+      "coverage": "US nationwide",
+      "period": "1880-1940",
+      "license": "Free (account required)",
+      "notes": "Scanned ED maps from NARA Microfilm A3378. Search 'Enumeration District Maps, Dade County, Florida' for 1910, 1920, 1930. Must georeference and digitize as polygons."
+    },
+    {
+      "priority": 5,
+      "rank": 17,
+      "id": "umiami_digital",
+      "name": "UMiami Libraries Digital Collections",
+      "url": "https://digitalcollections.library.miami.edu/",
+      "rare_maps_url": "http://exhibits.library.miami.edu/maps/index.html",
+      "overtown_oral_history": "https://www.library.miami.edu/ohp-communities-overtown.html",
+      "overtown_chronology": "https://www.library.miami.edu/ohp-overtown-chronology.html",
+      "race_property_storymap": "https://cdn.miami.edu/wda/cce/Documents/Miami-Housing-Solutions-Lab/raceAndProperty.html",
+      "format": ["images", "documents"],
+      "gis_ready": false,
+      "notes": "Purdy, Tebeau, and Douglas map subcollections. Overtown Oral History Project has geographic references. Race and Property StoryMap documents deed restrictions."
+    },
+    {
+      "priority": 5,
+      "rank": 18,
+      "id": "fiu_archive",
+      "name": "FIU Miami Metropolitan Archive",
+      "url": "http://dpanther.fiu.edu/",
+      "miami_beach_archive": "http://dpanther.fiu.edu/sobek/MBDA",
+      "format": ["scanned documents"],
+      "gis_ready": false,
+      "notes": "Early city council minutes, urban planning documents, charters. Best source for reconstructing historical City of Miami boundaries from annexation ordinances."
+    },
+    {
+      "priority": 5,
+      "rank": 19,
+      "id": "historymiami",
+      "name": "HistoryMiami Museum Archives",
+      "url": "https://www.historymiamiarchives.org/",
+      "format": ["physical + some digital"],
+      "gis_ready": false,
+      "notes": "1,900+ maps; 1M+ photos; Romer Collection (1925-1950s). Most access is in-person. Essential for deep research."
+    },
+    {
+      "priority": 5,
+      "rank": 20,
+      "id": "miami_dade_clerk",
+      "name": "Miami-Dade County Clerk's Official Records",
+      "url": "https://onlineservices.miamidadeclerk.gov/officialrecords",
+      "format": ["scanned documents"],
+      "gis_ready": false,
+      "notes": "Historical plat maps, deed records with racial covenants, annexation ordinances. Free search but requires manual document mining."
+    }
+  ],
+  "academic_sources": [
+    {
+      "citation": "Paul S. George, 'Colored Town: Miami's Black Community, 1896-1930' (Florida Historical Quarterly, 1977)",
+      "url": "https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=3479&context=fhq",
+      "open_access": true,
+      "relevance": "Definitive article on Overtown geography and development"
+    },
+    {
+      "citation": "N.D.B. Connolly, 'A World More Concrete' (U of Chicago Press, 2014)",
+      "url": null,
+      "open_access": false,
+      "relevance": "Race, real estate, and Jim Crow South Florida; co-led Mapping Inequality project"
+    },
+    {
+      "citation": "Marvin Dunn, 'Black Miami in the Twentieth Century' (UPF, 1997)",
+      "url": null,
+      "open_access": false,
+      "relevance": "Definitive history of Black Miami; racial violence, settlements"
+    },
+    {
+      "citation": "Raymond A. Mohl, 'Whitening Miami' (FHQ, 2001)",
+      "url": "https://stars.library.ucf.edu/fhq/",
+      "open_access": true,
+      "relevance": "Housing discrimination, I-95 destruction of Overtown"
+    },
+    {
+      "citation": "David Chalmers, 'The Ku Klux Klan in the Sunshine State: The 1920s' (FHQ, 1963)",
+      "url": "https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=2895&context=fhq",
+      "open_access": true,
+      "relevance": "KKK activity in Miami"
+    },
+    {
+      "citation": "Raymond A. Mohl, 'Black Immigrants: Bahamians in Early Twentieth-Century Miami' (FHQ, 1986)",
+      "url": "https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=3792&context=fhq",
+      "open_access": true,
+      "relevance": "Bahamian immigration patterns, occupations, settlements"
+    }
+  ],
+  "gaps_and_known_issues": [
+    {
+      "gap": "Enumeration district boundary polygons",
+      "effort": "HIGH (40-80 hours)",
+      "value": "HIGH",
+      "approach": "Download NARA scanned ED maps from FamilySearch, georeference in QGIS against modern Miami-Dade parcel layer, digitize polygons, join to IPUMS ENUMDIST variable"
+    },
+    {
+      "gap": "Historical City of Miami annexation boundaries",
+      "effort": "MEDIUM (20-40 hours)",
+      "value": "HIGH",
+      "approach": "Mine FIU Miami Metropolitan Archive for annexation ordinances; trace from historical plat maps; create shapefile per year (1896, 1913, 1920, 1925)"
+    },
+    {
+      "gap": "Sanborn map georeferencing",
+      "effort": "MEDIUM (2-4 hrs per sheet; ~500 hours for full 1921 set)",
+      "value": "VERY HIGH",
+      "approach": "Use QGIS Georeferencer with Miami-Dade parcel data as control. Prioritize 1921 edition (123 sheets). Check ProQuest Sanborn Geo Edition via institutional subscription."
+    },
+    {
+      "gap": "Colored Town/Overtown year-by-year boundary refinement",
+      "effort": "LOW-MEDIUM (10-20 hours)",
+      "value": "HIGH",
+      "approach": "Cross-reference georeferenced Sanborn maps (1914, 1918, 1921), ED maps, and Paul George's scholarship to refine the approximate polygons in boundaries.geojson"
+    },
+    {
+      "gap": "Racial deed covenant geography",
+      "effort": "VERY HIGH (100+ hours)",
+      "value": "HIGH",
+      "approach": "Mine Miami-Dade Clerk's deed records by subdivision; UMiami Race and Property StoryMap has partial coverage"
+    },
+    {
+      "gap": "Streetcar route vector data",
+      "effort": "MEDIUM (15-30 hours)",
+      "value": "MEDIUM",
+      "approach": "Use Tundria 1928 map overlay (http://www.tundria.com/trams/USA/Miami-1928.php) as digitizing guide"
+    },
+    {
+      "gap": "Pre-1920 Black school and church locations",
+      "effort": "MEDIUM",
+      "value": "MEDIUM",
+      "approach": "Florida Memory WPA Church Records (200+ Dade County churches); Miami-Dade Public Schools historical records"
+    },
+    {
+      "gap": "Agricultural land use 1910s-1920s",
+      "effort": "MEDIUM-HIGH",
+      "value": "LOW-MEDIUM",
+      "approach": "USGS topoview land-cover on 1915 topo; 1927 FIU aerials for extent mapping"
+    }
+  ]
+}

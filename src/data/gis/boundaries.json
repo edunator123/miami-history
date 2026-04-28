@@ -1,0 +1,161 @@
+{
+  "type": "FeatureCollection",
+  "name": "miami_historical_boundaries_1910_1930",
+  "metadata": {
+    "description": "Historical boundary polygons for Miami and Dade County racialized urban planning",
+    "source": "Built by Labor, Divided by Design research project",
+    "coordinate_system": "WGS84 (EPSG:4326)",
+    "coordinate_order": "[longitude, latitude]",
+    "note": "Polygons are approximations derived from historical accounts and Paul S. George's scholarship. Refinement recommended using georeferenced Sanborn maps."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-80.210, 25.794],
+          [-80.195, 25.794],
+          [-80.195, 25.778],
+          [-80.210, 25.778],
+          [-80.210, 25.794]
+        ]]
+      },
+      "properties": {
+        "id": "overtown_1920",
+        "name": "Colored Town / Overtown (1920 approximate boundary)",
+        "type": "segregated_district",
+        "era": "1920",
+        "date_range": "1896-present",
+        "north_boundary": "NW 20th St (the 'color line')",
+        "south_boundary": "NW 5th/6th St",
+        "east_boundary": "FEC tracks / NW 1st Ave",
+        "west_boundary": "NW 6th-7th Ave",
+        "significance": "Miami's segregated Black district, established by deed restrictions and the FEC tracks as de facto racial boundary. Home to large Bahamian and West Indian population alongside African Americans from the US South.",
+        "source": "Paul S. George, 'Colored Town: Miami's Black Community, 1896-1930' (Florida Historical Quarterly, 1977)",
+        "coordinate_precision": "approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-80.2415, 25.7285],
+          [-80.2385, 25.7285],
+          [-80.2385, 25.7245],
+          [-80.2415, 25.7245],
+          [-80.2415, 25.7285]
+        ]]
+      },
+      "properties": {
+        "id": "west_grove_little_bahamas",
+        "name": "West Grove / Little Bahamas (Coconut Grove)",
+        "type": "immigrant_settlement",
+        "era": "1880s-present",
+        "date_range": "1880s-present",
+        "significance": "Oldest continuous Bahamian settlement in Miami-Dade; predates Miami incorporation. Charles Ave and Grand Ave corridor. Includes Mariah Brown House, E.W.F. Stirrup House, Charlotte Jane Memorial Cemetery.",
+        "source": "Marvin Dunn, 'Black Miami in the Twentieth Century' (1997); UMiami Libraries Coconut Grove collections",
+        "coordinate_precision": "approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-80.200, 25.825],
+          [-80.180, 25.825],
+          [-80.180, 25.810],
+          [-80.200, 25.810],
+          [-80.200, 25.825]
+        ]]
+      },
+      "properties": {
+        "id": "lemon_city",
+        "name": "Lemon City",
+        "type": "historic_community",
+        "era": "1890s-1920s",
+        "date_range": "1889-absorbed into Miami",
+        "significance": "Mixed Black and white community north of Miami; major pineapple farming area in 1890s-1900s; area now part of Little Haiti/Little River",
+        "source": "Historical accounts",
+        "coordinate_precision": "approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-80.224, 25.836],
+          [-80.221, 25.836],
+          [-80.221, 25.831],
+          [-80.224, 25.831],
+          [-80.224, 25.836]
+        ]]
+      },
+      "properties": {
+        "id": "liberty_square_1937",
+        "name": "Liberty Square Housing Project",
+        "type": "public_housing",
+        "era": "1937",
+        "date_range": "1937-present",
+        "north_boundary": "NW 67th St",
+        "south_boundary": "NW 62nd St",
+        "east_boundary": "NW 12th Ave",
+        "west_boundary": "NW 15th Ave",
+        "significance": "One of the first US public housing projects for African Americans; opened Feb 6, 1937. Predecessor: 'Liberty City' subdivision platted by white developer Floyd W. Davis in mid-1920s. A 4-foot concrete wall along NW 12th Ave separated Black residents from white neighborhoods; remnants still stand.",
+        "source": "UMiami Overtown Chronology; Segregation by Design",
+        "coordinate_precision": "approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-80.224, 25.826],
+          [-80.224, 25.836]
+        ]
+      },
+      "properties": {
+        "id": "liberty_city_wall",
+        "name": "Liberty City Racial Wall",
+        "type": "segregation_infrastructure",
+        "era": "1930s",
+        "date_range": "1930s-present (partial remnants)",
+        "significance": "4-foot concrete wall along NW 12th Avenue from NW 62nd to NW 71st Streets, physically separating Black residents in Liberty Square from white neighborhoods. Portions still visible.",
+        "source": "UMiami Race and Property StoryMap",
+        "coordinate_precision": "approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-80.1950, 25.7600],
+          [-80.1950, 25.7700],
+          [-80.1950, 25.7800],
+          [-80.1950, 25.7900],
+          [-80.1950, 25.8000],
+          [-80.1910, 25.8170],
+          [-80.1870, 25.8350],
+          [-80.1700, 25.8930],
+          [-80.1620, 25.9330],
+          [-80.1510, 25.9600]
+        ]
+      },
+      "properties": {
+        "id": "fec_miami_racial_boundary",
+        "name": "FEC Railway tracks (de facto racial boundary)",
+        "type": "transportation_boundary",
+        "era": "1896-present",
+        "date_range": "1896-present",
+        "significance": "The Florida East Coast Railway tracks, running along what is now NW/NE 1st Avenue, served as the racial dividing line from Miami's founding. White downtown developed east; Colored Town west. This geographic feature was the single most important segregation infrastructure in early Miami.",
+        "source": "Multiple academic sources including Mohl, Connolly, Dunn",
+        "coordinate_precision": "approximate alignment"
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "name": "historical_hurricanes_miami_1920s",
+  "metadata": {
+    "description": "Major hurricanes affecting Dade County during study period (1910-1930)",
+    "source": "Built by Labor, Divided by Design research project; tracks from NOAA HURDAT2",
+    "coordinate_system": "WGS84 (EPSG:4326)",
+    "coordinate_order": "[longitude, latitude]",
+    "note": "For full official tracks, download NOAA HURDAT2 from https://www.nhc.noaa.gov/data/ — these are simplified representations of the approach and landfall."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.13, 25.77] },
+      "properties": {
+        "id": "hurricane_1926_landfall",
+        "name": "Great Miami Hurricane of 1926 - Landfall Point",
+        "type": "landfall",
+        "date": "1926-09-18",
+        "category": 4,
+        "wind_speed_mph": 150,
+        "central_pressure_mb": 935,
+        "storm_surge_ft": 10,
+        "deaths": 372,
+        "damage_1926_usd": 105000000,
+        "damage_adjusted_billions_usd": 164,
+        "eye_passage": "Eye passed directly over downtown Miami with ~35-minute lull",
+        "affected_areas": "Miami Beach, downtown waterfront, Coconut Grove, Hialeah, Moore Haven (Lake Okeechobee)",
+        "significance": "Effectively ended the Florida Land Boom of the 1920s. Occurred when many newcomers did not know hurricanes had a calm eye — many went outside during the lull and were killed by the back side of the storm."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-60.0, 15.0],
+          [-65.0, 17.5],
+          [-70.0, 20.0],
+          [-75.0, 23.0],
+          [-78.0, 25.0],
+          [-80.13, 25.77],
+          [-82.0, 26.5],
+          [-85.0, 27.5],
+          [-88.0, 29.0],
+          [-90.0, 30.5]
+        ]
+      },
+      "properties": {
+        "id": "hurricane_1926_track",
+        "name": "Great Miami Hurricane of 1926 - Track (simplified)",
+        "type": "track",
+        "date": "1926-09-11 to 1926-09-22",
+        "category_at_landfall": 4,
+        "notes": "Simplified approach track from Atlantic through Miami and into Gulf of Mexico. Use NOAA HURDAT2 for full official track with 6-hour intervals.",
+        "source_url": "https://www.nhc.noaa.gov/data/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.05, 26.71] },
+      "properties": {
+        "id": "hurricane_1928_landfall",
+        "name": "Okeechobee Hurricane of 1928 - Landfall Point",
+        "type": "landfall",
+        "date": "1928-09-16",
+        "category": 4,
+        "wind_speed_mph": 145,
+        "deaths_estimated": 2500,
+        "deaths_lake_okeechobee": 2500,
+        "miami_wind_mph": 78,
+        "affected_areas": "Primary devastation at Lake Okeechobee; Palm Beach County landfall; Miami impact relatively minor",
+        "significance": "Killed ~2,500 mostly Black migrant farmworkers around Lake Okeechobee due to dike failure. Led to Hoover Dike construction. Miami felt effects but escaped major damage.",
+        "miami_impact": "Tropical-storm force winds; minor compared to 1926"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-58.0, 15.0],
+          [-62.0, 16.5],
+          [-66.0, 17.5],
+          [-70.0, 18.5],
+          [-74.0, 21.0],
+          [-77.0, 23.5],
+          [-79.5, 26.0],
+          [-80.05, 26.71],
+          [-81.0, 28.0],
+          [-82.5, 30.5]
+        ]
+      },
+      "properties": {
+        "id": "hurricane_1928_track",
+        "name": "Okeechobee Hurricane of 1928 - Track (simplified)",
+        "type": "track",
+        "date": "1928-09-06 to 1928-09-21",
+        "category_at_landfall": 4,
+        "notes": "Simplified approach track. Landfall at West Palm Beach then devastated Lake Okeechobee region. Use NOAA HURDAT2 for full official track.",
+        "source_url": "https://www.nhc.noaa.gov/data/"
+      }
+    }
+  ]
+}

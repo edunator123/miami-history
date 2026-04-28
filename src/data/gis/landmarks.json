@@ -1,0 +1,578 @@
+{
+  "type": "FeatureCollection",
+  "name": "miami_historical_landmarks_1910_1930",
+  "metadata": {
+    "description": "Historical landmarks in Miami and Dade County, 1910-1930 era",
+    "source": "Built by Labor, Divided by Design research project",
+    "coordinate_system": "WGS84 (EPSG:4326)",
+    "coordinate_order": "[longitude, latitude]",
+    "total_features": 33,
+    "last_updated": "2026-04-16"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1981, 25.7819] },
+      "properties": {
+        "id": "lyric_theater",
+        "name": "Lyric Theater",
+        "category": "entertainment",
+        "neighborhood": "Overtown",
+        "historical_address": "819 NW 2nd Ave",
+        "modern_address": "819 NW 2nd Ave, Miami, FL",
+        "date_built": "1913",
+        "date_range": "1913-present",
+        "nrhp_number": "88002965",
+        "extant": true,
+        "significance": "Anchor of Overtown's 'Little Broadway' entertainment district; hosted Billie Holiday, Count Basie, Ella Fitzgerald"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1989, 25.7825] },
+      "properties": {
+        "id": "dorsey_house",
+        "name": "D.A. Dorsey House",
+        "category": "residence",
+        "neighborhood": "Overtown",
+        "historical_address": "250 NW 9th St",
+        "modern_address": "250 Dana A. Dorsey St, Miami, FL",
+        "date_built": "c. 1914",
+        "date_range": "1914-present",
+        "nrhp_number": "88002966",
+        "extant": true,
+        "significance": "Home of Dana A. Dorsey, Miami's first Black millionaire"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1992, 25.7817] },
+      "properties": {
+        "id": "greater_bethel_ame",
+        "name": "Greater Bethel AME Church",
+        "category": "religious",
+        "neighborhood": "Overtown",
+        "historical_address": "245 NW 8th St",
+        "modern_address": "245 NW 8th St, Miami, FL",
+        "date_built": "1896 (founded)",
+        "date_range": "1896-present",
+        "nrhp_number": "88002987",
+        "extant": true,
+        "significance": "One of Miami's oldest Black churches; founded same year as city incorporation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1998, 25.7828] },
+      "properties": {
+        "id": "mt_zion_baptist",
+        "name": "Mt. Zion Baptist Church",
+        "category": "religious",
+        "neighborhood": "Overtown",
+        "historical_address": "301 NW 9th St",
+        "modern_address": "301 NW 9th St, Miami, FL",
+        "date_built": "1896",
+        "date_range": "1896-present",
+        "nrhp_number": "88003059",
+        "extant": true,
+        "significance": "Founded by Bahamian immigrants; cornerstone Black religious institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1970, 25.7825] },
+      "properties": {
+        "id": "mary_elizabeth_hotel",
+        "name": "Mary Elizabeth Hotel",
+        "category": "hotel",
+        "neighborhood": "Overtown",
+        "historical_address": "NW 2nd Ave & NW 7th St (approx.)",
+        "modern_address": "Demolished; approximate location",
+        "date_built": "1921",
+        "date_range": "1921-1983",
+        "nrhp_number": null,
+        "extant": false,
+        "significance": "90-room Black-owned hotel; major social hub of Little Broadway; Flamingo Lounge",
+        "coordinate_precision": "approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1980, 25.7830] },
+      "properties": {
+        "id": "cola_nip_corner",
+        "name": "Cola Nip Corner",
+        "category": "commercial",
+        "neighborhood": "Overtown",
+        "historical_address": "NW 2nd Ave & NW 9th St intersection",
+        "modern_address": "NW 2nd Ave & NW 9th St, Miami, FL",
+        "date_built": "1920s",
+        "date_range": "1920s-1960s",
+        "nrhp_number": null,
+        "extant": false,
+        "significance": "Informal gathering spot at the heart of Little Broadway",
+        "coordinate_precision": "approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2005, 25.7888] },
+      "properties": {
+        "id": "st_agnes_episcopal",
+        "name": "St. Agnes Episcopal Church",
+        "category": "religious",
+        "neighborhood": "Overtown",
+        "historical_address": "1750 NW 3rd Ave",
+        "modern_address": "1750 NW 3rd Ave, Miami, FL",
+        "date_built": "1898 (founded)",
+        "date_range": "1898-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "Bahamian Anglican congregation; key institution for West Indian community"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2048, 25.7863] },
+      "properties": {
+        "id": "booker_t_washington_hs",
+        "name": "Booker T. Washington High School",
+        "category": "school",
+        "neighborhood": "Overtown",
+        "historical_address": "1200 NW 6th Ave",
+        "modern_address": "1200 NW 6th Ave, Miami, FL",
+        "date_built": "1927",
+        "date_range": "1927-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "First Black public high school in Miami"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2010, 25.7880] },
+      "properties": {
+        "id": "frederick_douglass_elem",
+        "name": "Frederick Douglass Elementary School",
+        "category": "school",
+        "neighborhood": "Overtown",
+        "historical_address": "314 NW 12th St",
+        "modern_address": "314 NW 12th St, Miami, FL",
+        "date_built": "Early 1900s",
+        "date_range": "Early 1900s-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "Historic Black elementary school"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1908, 25.7939] },
+      "properties": {
+        "id": "miami_city_cemetery",
+        "name": "Miami City Cemetery",
+        "category": "cemetery",
+        "neighborhood": "Edgewater",
+        "historical_address": "1800 NE 2nd Ave",
+        "modern_address": "1800 NE 2nd Ave, Miami, FL",
+        "date_built": "1897",
+        "date_range": "1897-present",
+        "nrhp_number": "NRHP listed",
+        "extant": true,
+        "significance": "Miami's original city cemetery; racially segregated sections (White, Black, Jewish)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2470, 25.8175] },
+      "properties": {
+        "id": "evergreen_cemetery",
+        "name": "Evergreen Memorial Cemetery",
+        "category": "cemetery",
+        "neighborhood": "Allapattah",
+        "historical_address": "NW 43rd Terr / NW 41st St",
+        "modern_address": "Allapattah, Miami, FL",
+        "date_built": "1913",
+        "date_range": "1913-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "Historic Black cemetery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2450, 25.8164] },
+      "properties": {
+        "id": "lincoln_memorial_park",
+        "name": "Lincoln Memorial Park Cemetery",
+        "category": "cemetery",
+        "neighborhood": "Brownsville",
+        "historical_address": "3001 NW 46th St",
+        "modern_address": "3001 NW 46th St, Miami, FL",
+        "date_built": "1924",
+        "date_range": "1924-present",
+        "nrhp_number": "100002292",
+        "extant": true,
+        "significance": "Major Black cemetery; burial site of many Overtown community leaders"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1900, 25.7687] },
+      "properties": {
+        "id": "royal_palm_hotel",
+        "name": "Royal Palm Hotel",
+        "category": "hotel",
+        "neighborhood": "Downtown Miami",
+        "historical_address": "N bank of Miami River at Biscayne Bay",
+        "modern_address": "Demolished; site is now near Bayside",
+        "date_built": "1897",
+        "date_range": "1897-1930",
+        "nrhp_number": null,
+        "extant": false,
+        "significance": "Flagler's grand hotel that catalyzed Miami's founding; damaged in 1926 hurricane; demolished 1930"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1420, 25.7873] },
+      "properties": {
+        "id": "flamingo_hotel",
+        "name": "Flamingo Hotel",
+        "category": "hotel",
+        "neighborhood": "Miami Beach",
+        "historical_address": "15th St & Bay Rd, Miami Beach",
+        "modern_address": "Demolished; approximate location",
+        "date_built": "1920",
+        "date_range": "1920-c. 1960",
+        "nrhp_number": null,
+        "extant": false,
+        "significance": "Carl Fisher's flagship Miami Beach hotel; opened New Year's Eve 1920; anchored Miami Beach development"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2430, 25.7265] },
+      "properties": {
+        "id": "mariah_brown_house",
+        "name": "Mariah Brown House",
+        "category": "residence",
+        "neighborhood": "Coconut Grove (West Grove / Little Bahamas)",
+        "historical_address": "3298 Charles Ave",
+        "modern_address": "3298 Charles Ave, Miami, FL",
+        "date_built": "c. 1890",
+        "date_range": "1890-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "Oldest Black-owned home in Dade County; Bahamian heritage site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2440, 25.7270] },
+      "properties": {
+        "id": "ewf_stirrup_house",
+        "name": "E.W.F. Stirrup House",
+        "category": "residence",
+        "neighborhood": "Coconut Grove (West Grove)",
+        "historical_address": "Charles Ave near Main Hwy",
+        "modern_address": "3242 Charles Ave, Miami, FL",
+        "date_built": "1897",
+        "date_range": "1897-present",
+        "nrhp_number": "NRHP listed",
+        "extant": true,
+        "significance": "Home of Ebenezer Woodbury Franklin Stirrup, prominent Bahamian developer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2470, 25.7260] },
+      "properties": {
+        "id": "christ_episcopal_grove",
+        "name": "Christ Episcopal Church",
+        "category": "religious",
+        "neighborhood": "Coconut Grove (West Grove)",
+        "historical_address": "3481 Hibiscus St",
+        "modern_address": "3481 Hibiscus St, Miami, FL",
+        "date_built": "1901",
+        "date_range": "1901-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "Bahamian Anglican congregation in Coconut Grove"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1961, 25.7762] },
+      "properties": {
+        "id": "fec_miami_station",
+        "name": "FEC Railway Miami Station",
+        "category": "transportation",
+        "neighborhood": "Downtown Miami",
+        "historical_address": "200 NW 1st Ave",
+        "modern_address": "Demolished 1964",
+        "date_built": "1912 (wooden station)",
+        "date_range": "1896-1964",
+        "nrhp_number": null,
+        "extant": false,
+        "significance": "Terminus of Flagler's Florida East Coast Railway; gateway for most Miami arrivals"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1860, 25.7749] },
+      "properties": {
+        "id": "bayfront_park",
+        "name": "Bayfront Park (Royal Palm Park)",
+        "category": "civic",
+        "neighborhood": "Downtown Miami",
+        "historical_address": "301 Biscayne Blvd",
+        "modern_address": "301 Biscayne Blvd, Miami, FL",
+        "date_built": "1896 (original) / 1924 (expansion)",
+        "date_range": "1896-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "Expanded via dredging c. 1924; central civic space"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1860, 25.7895] },
+      "properties": {
+        "id": "collins_bridge_mainland",
+        "name": "Collins Bridge (mainland terminus)",
+        "category": "transportation",
+        "neighborhood": "Downtown Miami",
+        "historical_address": "~NE 15th St",
+        "modern_address": "Replaced by Venetian Causeway",
+        "date_built": "1913",
+        "date_range": "1913-1925",
+        "nrhp_number": null,
+        "extant": false,
+        "significance": "2.5-mile wooden bridge; longest wooden bridge in the world when built; opened Miami Beach to development"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1880, 25.7820] },
+      "properties": {
+        "id": "county_causeway",
+        "name": "County Causeway (later MacArthur Causeway)",
+        "category": "transportation",
+        "neighborhood": "Downtown Miami to South Beach",
+        "historical_address": "Downtown Miami to South Beach",
+        "modern_address": "MacArthur Causeway",
+        "date_built": "1920",
+        "date_range": "1920-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "Second bridge to Miami Beach; renamed MacArthur in 1942"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1892, 25.7892] },
+      "properties": {
+        "id": "venetian_causeway",
+        "name": "Venetian Causeway",
+        "category": "transportation",
+        "neighborhood": "Downtown Miami to Miami Beach",
+        "historical_address": "NE 15th St to Dade Blvd",
+        "modern_address": "Venetian Causeway, Miami, FL",
+        "date_built": "1926",
+        "date_range": "1926-present",
+        "nrhp_number": "89000852",
+        "extant": true,
+        "significance": "Replaced Collins Bridge; connected via Venetian Islands"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1310, 25.7630] },
+      "properties": {
+        "id": "government_cut",
+        "name": "Government Cut entrance",
+        "category": "transportation",
+        "neighborhood": "Southern tip of Miami Beach",
+        "historical_address": "S tip of Miami Beach",
+        "modern_address": "Government Cut, Miami, FL",
+        "date_built": "1905",
+        "date_range": "1905-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "Dredged shipping channel; created Fisher Island in the process"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2383, 25.7658] },
+      "properties": {
+        "id": "douglas_entrance",
+        "name": "Douglas Entrance (La Puerta del Sol)",
+        "category": "architectural",
+        "neighborhood": "Coral Gables",
+        "historical_address": "800 S Douglas Rd",
+        "modern_address": "800 S Douglas Rd, Coral Gables, FL",
+        "date_built": "1924",
+        "date_range": "1924-present",
+        "nrhp_number": "NRHP listed (Sept 22, 1972)",
+        "extant": true,
+        "significance": "Ornate Mediterranean Revival gateway to Merrick's Coral Gables development"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2780, 25.7510] },
+      "properties": {
+        "id": "biltmore_hotel",
+        "name": "Biltmore Hotel",
+        "category": "hotel",
+        "neighborhood": "Coral Gables",
+        "historical_address": "1200 Anastasia Ave",
+        "modern_address": "1200 Anastasia Ave, Coral Gables, FL",
+        "date_built": "1926",
+        "date_range": "1926-present",
+        "nrhp_number": "NRHP listed; National Historic Landmark",
+        "extant": true,
+        "significance": "315 ft tall; opened Jan 15, 1926; crown jewel of Merrick's Coral Gables"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2720, 25.7490] },
+      "properties": {
+        "id": "venetian_pool",
+        "name": "Venetian Pool",
+        "category": "recreation",
+        "neighborhood": "Coral Gables",
+        "historical_address": "2701 De Soto Blvd",
+        "modern_address": "2701 De Soto Blvd, Coral Gables, FL",
+        "date_built": "1924",
+        "date_range": "1924-present",
+        "nrhp_number": "NRHP listed",
+        "extant": true,
+        "significance": "Converted from coral rock quarry; public pool with Venetian styling"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2650, 25.7500] },
+      "properties": {
+        "id": "coral_gables_congregational",
+        "name": "Coral Gables Congregational Church",
+        "category": "religious",
+        "neighborhood": "Coral Gables",
+        "historical_address": "3010 De Soto Blvd",
+        "modern_address": "3010 De Soto Blvd, Coral Gables, FL",
+        "date_built": "1925",
+        "date_range": "1925-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "George Merrick's church; dedicated to his father"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1917, 25.7738] },
+      "properties": {
+        "id": "miami_grid_origin",
+        "name": "Flagler Street & Miami Avenue (zero point)",
+        "category": "civic",
+        "neighborhood": "Downtown Miami",
+        "historical_address": "Miami's grid origin",
+        "modern_address": "Flagler St & Miami Ave, Miami, FL",
+        "date_built": "1896",
+        "date_range": "1896-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "The (0,0) of Miami's street grid; all NW/NE/SW/SE addresses radiate from this point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1932, 25.7744] },
+      "properties": {
+        "id": "fort_dallas_site",
+        "name": "Fort Dallas site",
+        "category": "historical",
+        "neighborhood": "Downtown Miami",
+        "historical_address": "N bank of Miami River at mouth",
+        "modern_address": "Fort Dallas Park / Lummus Park (barracks moved here)",
+        "date_built": "1836",
+        "date_range": "1836-1850s",
+        "nrhp_number": null,
+        "extant": "relocated",
+        "significance": "US Army fort during Seminole Wars; William English's plantation used slave labor here pre-Civil War"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1892, 25.7689] },
+      "properties": {
+        "id": "miami_circle",
+        "name": "Brickell Point / Miami Circle",
+        "category": "archaeological",
+        "neighborhood": "Brickell",
+        "historical_address": "401 Brickell Ave",
+        "modern_address": "401 Brickell Ave, Miami, FL",
+        "date_built": "Pre-Columbian (Tequesta); Brickell estate 1870s",
+        "date_range": "~500 BCE-present",
+        "nrhp_number": "National Historic Landmark (2009)",
+        "extant": true,
+        "significance": "Tequesta ceremonial site; William and Mary Brickell estate in the era"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1539, 25.7377] },
+      "properties": {
+        "id": "virginia_key_beach",
+        "name": "Virginia Key Beach Park",
+        "category": "recreation",
+        "neighborhood": "Virginia Key",
+        "historical_address": "4020 Virginia Beach Dr",
+        "modern_address": "4020 Virginia Beach Dr, Miami, FL",
+        "date_built": "1945 (formal designation)",
+        "date_range": "1945-present",
+        "nrhp_number": "NRHP listed",
+        "extant": true,
+        "significance": "Designated 'Colored Only' beach during segregation; only legal beach access for Black residents of Miami-Dade"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.1895, 25.7685] },
+      "properties": {
+        "id": "miami_river_mouth",
+        "name": "Miami River mouth",
+        "category": "geographic",
+        "neighborhood": "Downtown Miami",
+        "historical_address": "SE/SW 2nd St at Biscayne Bay",
+        "modern_address": "Miami River mouth, Miami, FL",
+        "date_built": "natural",
+        "date_range": "pre-history-present",
+        "nrhp_number": null,
+        "extant": true,
+        "significance": "Founding site of Miami; Tequesta village for ~2000 years; Julia Tuttle's original land"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.2430, 25.7780] },
+      "properties": {
+        "id": "miami_river_rapids",
+        "name": "Miami River rapids (removed)",
+        "category": "geographic",
+        "neighborhood": "Upper Miami River",
+        "historical_address": "~NW 27th Ave at Miami River",
+        "modern_address": "Removed during dredging",
+        "date_built": "natural",
+        "date_range": "pre-history-1912",
+        "nrhp_number": null,
+        "extant": false,
+        "significance": "Natural rapids/waterfall on Miami River; removed during Everglades drainage canal dredging",
+        "coordinate_precision": "approximate"
+      }
+    }
+  ]
+}
